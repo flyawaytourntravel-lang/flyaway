@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study in Malaysia – Fly Away Tours and Travels</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1598652734606-a80284225b61?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.95);
+      min-height: 100vh;
+      padding: 40px 5%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+    }
+
+    .left, .right {
+      flex: 1 1 400px;
+    }
+
+    .left h1 {
+      color: #002855;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .left h2 {
+      color: #d62828;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .left p, .left li {
+      line-height: 1.6;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    .left ul {
+      padding-left: 20px;
+    }
+
+    .right {
+      background-color: #f5f5f5;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .right h3 {
+      margin-top: 0;
+      color: #002855;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #002855;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #004b99;
+    }
+
+    @media (max-width: 900px) {
+      .overlay {
+        flex-direction: column;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+    <!-- Left Content -->
+    <div class="left">
+      <h1>Study in Malaysia</h1>
+      <h2>Fly Away Tours and Travels</h2>
+
+      <p>Welcome to <strong>Fly Away Tours and Travels</strong>, your gateway to pursuing higher education in Malaysia—a rising destination known for quality education, global exposure, and affordability. Whether you're seeking top-ranked universities, vibrant student life, or cost-effective tuition, Malaysia is the perfect blend of all.</p>
+
+      <h3>Why Choose to Study in Malaysia?</h3>
+      <ul>
+        <li><strong>Top-Ranked Universities and Colleges:</strong>
+          <ul>
+            <li>University of Malaya (UM) – The oldest and highest-ranking university in Malaysia.</li>
+            <li>Monash University Malaysia – A global leader in education.</li>
+            <li>Universiti Teknologi Malaysia (UTM) – Renowned for engineering and tech.</li>
+            <li>Taylor's University – Ranked among Asia’s top 100.</li>
+            <li>Asia Pacific University (APU) – Focused on IT, design, and business.</li>
+          </ul>
+        </li>
+        <li><strong>Affordable Tuition Fees:</strong>
+          <ul>
+            <li>Undergraduate: MYR 12,000 – MYR 40,000/year</li>
+            <li>Postgraduate: MYR 20,000 – MYR 45,000/year</li>
+            <li>Diploma: MYR 10,000 – MYR 15,000/year</li>
+          </ul>
+        </li>
+        <li><strong>International Recognition:</strong> Many universities offer globally recognized degrees via UK, US, and Australian partnerships.</li>
+      </ul>
+
+      <h3>Top Courses to Study</h3>
+      <ul>
+        <li>Engineering and Technology: Civil, AI, Software, Computer Science</li>
+        <li>Business and Management: Finance, Marketing, Intl. Business</li>
+        <li>Medical & Health Sciences: Medicine, Nursing, Pharmacy</li>
+        <li>Law: LLB, Corporate Law, Intl. Law</li>
+        <li>Arts and Humanities: Psychology, Social Science, History</li>
+        <li>Design & Creative Arts: Animation, Graphic Design, Film</li>
+      </ul>
+
+      <h3>Cost of Living</h3>
+      <p>Malaysia offers an affordable lifestyle with average student expenses between <strong>MYR 1,200 – MYR 2,500/month</strong>, including housing, food, transportation, and leisure.</p>
+
+      <h3>Benefits with Fly Away Tours and Travels</h3>
+      <ul>
+        <li>Expert Consultation</li>
+        <li>Visa Assistance</li>
+        <li>University Placement</li>
+        <li>Pre-departure & On-arrival Support</li>
+        <li>Scholarship Guidance</li>
+      </ul>
+
+      <p>Let <strong>Fly Away Tours and Travels</strong> be your trusted partner in navigating your academic journey in Malaysia. <strong>Contact us today</strong> and take the first step toward a bright and promising future!</p>
+    </div>
+
+    <!-- Right Form -->
+    <div class="right">
+     <div class="container">
+  <section class="form-container" aria-label="Student Visa Application Form">
+    <h2>Apply for Your Malaysia Student Visa</h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="583ea361-8e7d-40d2-af8c-c9f071bb8084" />
+      <input type="hidden" id="visa_type" name="visa_type" value="Student Visa" />
+
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required />
+
+      <label for="university">University/Institution Name *</label>
+      <select id="university" name="university" required onchange="toggleUniversityOther(this)">
+        <option value="" disabled selected>Select your university</option>
+        <option value="University of Malaya">University of Malaya</option>
+        <option value="Universiti Kebangsaan Malaysia">Universiti Kebangsaan Malaysia</option>
+        <option value="Universiti Putra Malaysia">Universiti Putra Malaysia</option>
+        <option value="Multimedia University">Multimedia University</option>
+        <option value="Other">Other (please specify)</option>
+      </select>
+      <input type="text" id="university_other" name="university_other" placeholder="Please specify your university" style="display:none; margin-top:8px; padding:10px; border-radius:6px; border:1px solid #ccc;" />
+
+      <label for="course">Course Name *</label>
+      <select id="course" name="course" required onchange="toggleCourseOther(this)">
+        <option value="" disabled selected>Select your course</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Business Administration">Business Administration</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Medicine">Medicine</option>
+        <option value="Other">Other (please specify)</option>
+      </select>
+      <input type="text" id="course_other" name="course_other" placeholder="Please specify your course" style="display:none; margin-top:8px; padding:10px; border-radius:6px; border:1px solid #ccc;" />
+
+      <label for="message">Additional Message</label>
+      <textarea id="message" name="message" placeholder="Write any special requests or questions here..."></textarea>
+
+      <button type="submit" aria-label="Submit student visa application form">Submit Application</button>
+    </form>
+  </section>
+</div>
+
+<script>
+  function toggleUniversityOther(select) {
+    const otherInput = document.getElementById('university_other');
+    otherInput.style.display = select.value === 'Other' ? 'block' : 'none';
+    if (select.value !== 'Other') otherInput.value = '';
+  }
+
+  function toggleCourseOther(select) {
+    const otherInput = document.getElementById('course_other');
+    otherInput.style.display = select.value === 'Other' ? 'block' : 'none';
+    if (select.value !== 'Other') otherInput.value = '';
+  }
+</script>
+
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Latvia Business Visa – Fly Away Tours And Travels</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/c/cd/Riga_skyline.jpg') center/cover no-repeat;
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4);
+      z-index: 0;
+    }
+    header h1, header p, .visa-rate { position: relative; z-index: 1; }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+    header p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto 25px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+    }
+    .visa-rate {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #ffde59;
+      animation: pulse 2.5s infinite ease-in-out;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    }
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+    .container {
+      max-width: 1200px;
+      margin: 40px auto 80px;
+      padding: 0 20px;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .form-container {
+      flex: 1 1 380px;
+      background: white;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .form-container:hover { box-shadow: 0 12px 36px rgba(0,0,0,0.15); }
+    .form-container h2 {
+      color: #4a90e2;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #555;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 18px;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.25s ease;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: #4a90e2;
+      outline: none;
+      box-shadow: 0 0 6px rgba(74,144,226,0.4);
+    }
+    textarea { resize: vertical; min-height: 90px; }
+    button {
+      width: 100%;
+      background-color: #4a90e2;
+      color: white;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover { background-color: #356ac3; }
+    .content {
+      flex: 2 1 700px;
+      background: white;
+      padding: 35px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .content h2 {
+      color: #4a90e2;
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+    .content h3 {
+      color: #333;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      font-size: 1.4rem;
+      border-bottom: 3px solid #4a90e2;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .content ul {
+      margin-left: 20px;
+      margin-bottom: 25px;
+      color: #555;
+      font-size: 1rem;
+      list-style-type: disc;
+    }
+    .content p { margin-bottom: 20px; font-size: 1rem; color: #444; }
+    @media (max-width: 900px) {
+      .container { flex-direction: column; }
+      .form-container, .content { max-width: 100%; margin: 0 auto; }
+      header h1 { font-size: 2rem; }
+      header p { font-size: 1rem; }
+      .visa-rate { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Latvia Business Visa – Fly Away Tours And Travels</h1>
+  <p>Connect with Latvia’s vibrant economy, strategic EU location, and growing business opportunities in the Baltics.</p>
+  <div class="visa-rate">Visa Success Rate: <span id="counter">0%</span></div>
+</header>
+
+<div class="container">
+  <section class="form-container">
+    <!-- Right Form -->
+<div class="right">
+  <div class="container">
+    <section class="form-container" aria-label="Latvia Business Visa Application Form">
+      <h2>Apply for Your Latvia Business Visa</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="583ea361-8e7d-40d2-af8c-c9f071bb8084" />
+        <input type="hidden" id="visa_type" name="visa_type" value="Business Visa" />
+
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required />
+
+        <label for="company">Company Name *</label>
+        <input type="text" id="company" name="company" placeholder="Your company name" required />
+
+        <label for="position">Your Position *</label>
+        <input type="text" id="position" name="position" placeholder="Director, Manager, etc." required />
+
+        <label for="business_purpose">Purpose of Visit *</label>
+        <select id="business_purpose" name="business_purpose" required onchange="togglePurposeOther(this)">
+          <option value="" disabled selected>Select purpose</option>
+          <option value="Business Meetings">Business Meetings</option>
+          <option value="Conference">Conference</option>
+          <option value="Partnership Deal">Partnership Deal</option>
+          <option value="Exhibition/Trade Fair">Exhibition/Trade Fair</option>
+          <option value="Other">Other (please specify)</option>
+        </select>
+        <input type="text" id="purpose_other" name="purpose_other" placeholder="Please specify other purpose" style="display:none; margin-top:8px; padding:10px; border-radius:6px; border:1px solid #ccc;" />
+
+        <label for="message">Additional Message</label>
+        <textarea id="message" name="message" placeholder="Write any special requests or details here..."></textarea>
+
+        <button type="submit" aria-label="Submit business visa application form">Submit Application</button>
+      </form>
+    </section>
+  </div>
+</div>
+
+  </section>
+
+  <section class="content">
+    <h2>Latvia Business Visa Overview</h2>
+    <p>Latvia is a gateway to the Baltic region and the European Union, offering a strategic location for trade and investment. Its economy thrives in sectors like logistics, IT, manufacturing, and green energy.</p>
+
+    <h3>Documents Required</h3>
+    <ul>
+      <li>Valid passport (minimum 6 months validity)</li>
+      <li>Completed visa application form</li>
+      <li>Recent passport-sized photographs</li>
+      <li>Invitation letter from a Latvian business partner</li>
+      <li>Proof of financial means</li>
+      <li>Travel insurance covering the Schengen area</li>
+      <li>Accommodation details in Latvia</li>
+    </ul>
+
+    <h3>Visa Processing Time</h3>
+    <p>Generally processed within 15 calendar days, but may vary by season and application volume.</p>
+
+    <h3>Why Choose Fly Away Tours And Travels?</h3>
+    <ul>
+      <li>Specialized in Schengen business visa documentation</li>
+      <li>High approval rate for business travelers</li>
+      <li>End-to-end guidance for a smooth application process</li>
+    </ul>
+  </section>
+</div>
+
+<script>
+  const counter = document.getElementById('counter');
+  let count = 0;
+  const target = 98;
+  const duration = 2500;
+  const stepTime = Math.abs(Math.floor(duration / target));
+  function updateCounter() {
+    count++;
+    counter.textContent = count + '%';
+    if (count < target) setTimeout(updateCounter, stepTime);
+  }
+  updateCounter();
+</script>
+
+</body>
+</html>

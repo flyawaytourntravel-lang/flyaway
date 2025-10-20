@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iceland Visa | Fly Away Tours And Travels</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: #e9f0f8;
+      color: #2c3e50;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    header {
+      background: linear-gradient(135deg, #003366, #66a3ff);
+      color: #f0f8ff;
+      padding: 60px 15px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0 0 12px;
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 1.3px;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+    }
+    header p {
+      font-size: 1.3rem;
+      max-width: 720px;
+      margin: 0 auto 25px;
+      font-weight: 500;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    }
+    .success-rate {
+      font-size: 2.6rem;
+      font-weight: 900;
+      color: #ffd700;
+      animation: bounce 2.8s ease-in-out infinite;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      user-select: none;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-10px) scale(1.1); }
+    }
+
+    main.container {
+      max-width: 1180px;
+      margin: 50px auto 80px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+      padding: 0 20px;
+    }
+
+    section.form-section {
+      background: white;
+      border-radius: 14px;
+      padding: 30px 28px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+      transition: box-shadow 0.3s ease;
+    }
+    section.form-section:hover {
+      box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+    }
+    section.form-section h2 {
+      font-weight: 700;
+      font-size: 1.9rem;
+      color: #003366;
+      margin-bottom: 25px;
+      border-bottom: 3px solid #66a3ff;
+      padding-bottom: 8px;
+    }
+    form label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #2c3e50;
+      font-size: 1rem;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 12px 16px;
+      margin-bottom: 18px;
+      border-radius: 8px;
+      border: 1.5px solid #d1d8e0;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+      font-family: inherit;
+    }
+    form input[type="text"]:focus,
+    form input[type="email"]:focus,
+    form input[type="tel"]:focus,
+    form select:focus,
+    form textarea:focus {
+      border-color: #66a3ff;
+      outline: none;
+      box-shadow: 0 0 8px rgba(102,163,255,0.35);
+    }
+    form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    form button {
+      background-color: #66a3ff;
+      color: white;
+      font-weight: 700;
+      font-size: 1.15rem;
+      padding: 14px 0;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #003366;
+    }
+
+    section.content-section {
+      background: white;
+      padding: 32px 38px;
+      border-radius: 14px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+      overflow-wrap: break-word;
+    }
+    section.content-section h2 {
+      font-size: 2.3rem;
+      color: #66a3ff;
+      margin-bottom: 18px;
+      font-weight: 800;
+      border-bottom: 4px solid #66a3ff;
+      padding-bottom: 10px;
+    }
+    section.content-section h3 {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      color: #2c3e50;
+      font-weight: 700;
+    }
+    section.content-section p,
+    section.content-section ul {
+      font-size: 1.1rem;
+      color: #34495e;
+      margin-bottom: 20px;
+    }
+    section.content-section ul {
+      list-style-type: disc;
+      margin-left: 25px;
+    }
+
+    @media (max-width: 900px) {
+      main.container {
+        grid-template-columns: 1fr;
+        padding: 0 15px 60px;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+        max-width: 100%;
+      }
+      .success-rate {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Iceland Visa Application - Fly Away Tours And Travels</h1>
+  <p>Iceland, the land of glaciers and geysers, offers stunning natural beauty and unique cultural experiences. Explore Reykjavik, the Northern Lights, and spectacular landscapes.</p>
+  <div class="success-rate">Visa Approval Rate: <span id="countup">0%</span></div>
+</header>
+
+<main class="container">
+
+  <section class="form-section" aria-label="Visa Application Form">
+    <!-- Right Form -->
+<div class="right">
+  <div class="container">
+    <section class="form-container" aria-label="Iceland Visit Visa Application Form">
+      <h2>Apply for Your Iceland Visit Visa</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="583ea361-8e7d-40d2-af8c-c9f071bb8084" />
+        <input type="hidden" id="visa_type" name="visa_type" value="Visit Visa" />
+
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required />
+
+        <label for="passport">Passport Number *</label>
+        <input type="text" id="passport" name="passport" placeholder="Enter your passport number" required />
+
+        <label for="travel_dates">Travel Dates *</label>
+        <input type="text" id="travel_dates" name="travel_dates" placeholder="e.g. 10 Oct 2025 - 20 Oct 2025" required />
+
+        <label for="purpose">Purpose of Visit *</label>
+        <select id="purpose" name="purpose" required>
+          <option value="" disabled selected>Select purpose</option>
+          <option value="Tourism">Tourism</option>
+          <option value="Family Visit">Family Visit</option>
+          <option value="Business">Business</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="message">Additional Message</label>
+        <textarea id="message" name="message" placeholder="Write any special requests or questions here..."></textarea>
+
+        <button type="submit" aria-label="Submit Iceland visit visa application form">Submit Application</button>
+      </form>
+    </section>
+  </div>
+</div>
+  </section>
+
+  <section class="content-section" aria-label="Iceland Visa Information">
+    <h2>About Iceland</h2>
+    <p>Iceland is a Nordic island nation famed for its dramatic volcanic landscapes, hot springs, waterfalls, and the breathtaking Northern Lights. Reykjavik, its capital, offers a mix of modern culture and historic charm.</p>
+
+    <h3>Documents Required</h3>
+    <ul>
+      <li>Valid passport with minimum 3 months validity beyond stay</li>
+      <li>Completed Schengen visa application form</li>
+      <li>Recent passport-sized photos meeting Schengen standards</li>
+      <li>Travel insurance with minimum €30,000 medical coverage</li>
+      <li>Proof of accommodation and detailed travel itinerary</li>
+      <li>Proof of financial means for the duration of stay</li>
+      <li>Round-trip flight booking</li>
+      <li>Employment or study documents if applicable</li>
+    </ul>
+
+    <h3>Processing Time</h3>
+    <p>Visa processing usually takes 10-15 business days. Early application is recommended to avoid delays.</p>
+
+    <h3>Types of Visa</h3>
+    <ul>
+      <li><strong>Schengen Short-Stay Visa (Type C):</strong> For tourism, business, or family visits up to 90 days.</li>
+      <li><strong>National Visa (Type D):</strong> For longer stays like work or study.</li>
+      <li><strong>Student Visa:</strong> For academic purposes.</li>
+      <li><strong>Work Visa:</strong> For employment-related stays.</li>
+    </ul>
+
+    <h3>Why Choose Fly Away Tours And Travels?</h3>
+    <ul>
+      <li>Experienced consultants specializing in Icelandic visa applications</li>
+      <li>Comprehensive document review and application assistance</li>
+      <li>Quick appointment booking and visa status tracking</li>
+      <li>End-to-end support from application to visa issuance</li>
+    </ul>
+
+    <p>Plan your Icelandic adventure with confidence. Contact Fly Away Tours And Travels for expert visa guidance and support.</p>
+  </section>
+
+</main>
+
+<script>
+  const countElem = document.getElementById('countup');
+  let count = 0;
+  const target = 98;
+  const interval = 25;
+
+  function countUp() {
+    count++;
+    countElem.textContent = count + '%';
+    if (count < target) {
+      setTimeout(countUp, interval);
+    }
+  }
+  window.onload = countUp;
+</script>
+
+</body>
+</html>

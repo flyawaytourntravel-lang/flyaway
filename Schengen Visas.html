@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schengen Countries - Fly Away Tours and Travels</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f8fc;
+        padding: 0;
+    }
+
+    header {
+        text-align: center;
+        padding: 20px;
+        background-color: #003366;
+        color: white;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 28px;
+    }
+
+    #searchBar {
+        width: 80%;
+        max-width: 500px;
+        padding: 10px;
+        margin: 20px auto;
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        overflow: hidden;
+        max-width: 250px;
+        text-align: center;
+        transition: transform 0.3s ease;
+        border: 2px solid #ddd;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .card h3 {
+        margin: 10px 0 5px;
+        font-size: 20px;
+        color: #003366;
+    }
+
+    .card p {
+        font-size: 14px;
+        padding: 0 10px 10px;
+        color: #555;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Schengen Countries - Sticker Visa & E-Visa</h1>
+    <p>Explore all 27 Schengen countries and their visa types</p>
+</header>
+
+<input type="text" id="searchBar" placeholder="Search for a country..." onkeyup="searchCountries()">
+
+<div class="container" id="countryList">
+
+    <!-- Example Card -->
+    <div class="card">
+        <img src="https://flagcdn.com/w320/de.png" alt="Germany">
+        <h3><a href="Germany%20Visit%20Tourist%20Visa.html">Germany</a></h3>
+        <p>Sticker Visa - Known for its rich history, culture, and innovation.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/fr.png" alt="France">
+        <h3><a href="France%20Visit%20visa.html">France</a></h3>
+        <p>Sticker Visa - Famous for the Eiffel Tower, art, and fine cuisine.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/it.png" alt="Italy">
+        <h3><a href="Italy%20Visit%20Visa.html">Italy</a></h3>
+        <p>Sticker Visa - Renowned for history, art, and delicious cuisine.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/es.png" alt="Spain">
+        <h3><a href="Spain%20Visit%20visa.html">Spain</a></h3>
+        <p>Sticker Visa - Known for beaches, fiestas, and historic cities.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/nl.png" alt="Netherlands">
+        <h3><a href="Netherlands%20Visit%20Visa.html">Netherlands</a></h3>
+        <p>Sticker Visa - Famous for tulips, canals, and cycling culture.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/be.png" alt="Belgium">
+        <h3><a href="Belgium%20visit%20visa.html">Belgium</a></h3>
+        <p>Sticker Visa - Known for chocolate, waffles, and historic towns.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/pt.png" alt="Portugal">
+        <h3><a href="Portugal%20Visit%20visa.html">Portugal</a></h3>
+        <p>Sticker Visa - Famous for coastline, wine, and historic sites.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/at.png" alt="Austria">
+        <h3><a href="Austria%20Visit%20Visa.html">Austria</a></h3>
+        <p>Sticker Visa - Known for Alps, music, and imperial history.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/gr.png" alt="Greece">
+        <h3><a href="Greece%20Visit%20Visa%20.html">Greece</a></h3>
+        <p>Sticker Visa - Famous for ancient ruins and beautiful islands.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/fi.png" alt="Finland">
+        <h3><a href="Finland%20Visit%20visa.html">Finland</a></h3>
+        <p>Sticker Visa - Known for Northern Lights and serene nature.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/se.png" alt="Sweden">
+        <h3><a href="Sweden%20visit%20visa.html">Sweden</a></h3>
+        <p>Sticker Visa - Famous for design, innovation, and natural beauty.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/dk.png" alt="Denmark">
+        <h3><a href="Denmark%20visit%20visa.html">Denmark</a></h3>
+        <p>Sticker Visa - Known for hygge lifestyle and historic cities.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/no.png" alt="Norway">
+        <h3><a href="Norway%20Visit%20visa.html">Norway</a></h3>
+        <p>Sticker Visa - Famous for fjords and breathtaking landscapes.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/pl.png" alt="Poland">
+        <h3><a href="Poland%20Visit%20visa.html">Poland</a></h3>
+        <p>Sticker Visa - Rich in history, culture, and architecture.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/cz.png" alt="Czech Republic">
+        <h3><a href="Czech%20Republic%20visit%20visa.html">Czech Republic</a></h3>
+        <p>Sticker Visa - Known for castles, beer, and charming towns.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/hu.png" alt="Hungary">
+        <h3><a href="Hungary%20Visit%20Visa.html">Hungary</a></h3>
+        <p>Sticker Visa - Famous for thermal baths and vibrant culture.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/sk.png" alt="Slovakia">
+        <h3><a href="Slovakia%20Visit%20visa.html">Slovakia</a></h3>
+        <p>Sticker Visa - Known for mountains, castles, and caves.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/si.png" alt="Slovenia">
+        <h3><a href="Slovenia%20Visit%20visa.html">Slovenia</a></h3>
+        <p>Sticker Visa - Famous for lakes, mountains, and green spaces.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/ee.png" alt="Estonia">
+        <h3><a href="Estonia%20Visit%20Visa.html">Estonia</a></h3>
+        <p>E-Visa - Digital society and beautiful medieval towns.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/lv.png" alt="Latvia">
+        <h3><a href="Latvia%20Visit%20Visa%20.html">Latvia</a></h3>
+        <p>E-Visa - Famous for Art Nouveau architecture and forests.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/lt.png" alt="Lithuania">
+        <h3><a href="Lithuania%20Visa.html">Lithuania</a></h3>
+        <p>E-Visa - Known for baroque architecture and Baltic culture.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/is.png" alt="Iceland">
+        <h3><a href="Iceland%20visit%20Visa.html">Iceland</a></h3>
+        <p>Sticker Visa - Famous for volcanoes, glaciers, and geysers.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/lu.png" alt="Luxembourg">
+        <h3><a href="Luxembourg%20visit%20%20Visa.html">Luxembourg</a></h3>
+        <p>Sticker Visa - Known for banking, history, and castles.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/li.png" alt="Liechtenstein">
+        <h3><a href="Liechtenstein%20visit%20%20Visa.html">Liechtenstein</a></h3>
+        <p>Sticker Visa - Small yet picturesque alpine country.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/mt.png" alt="Malta">
+        <h3><a href="Malta%20%20Visit%20%20Visa.html">Malta</a></h3>
+        <p>Sticker Visa - Rich history, sunny climate, and beaches.</p>
+    </div>
+
+</div>
+
+<script>
+function searchCountries() {
+    let input = document.getElementById('searchBar').value.toLowerCase();
+    let cards = document.getElementsByClassName('card');
+    for (let i = 0; i < cards.length; i++) {
+        let title = cards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+        if (title.includes(input)) {
+            cards[i].style.display = '';
+        } else {
+            cards[i].style.display = 'none';
+        }
+    }
+}
+
+// Fade-in effect stagger
+document.addEventListener("DOMContentLoaded", () => {
+    let cards = document.querySelectorAll('.card');
+    cards.forEach((card, index) => {
+        card.style.animationDelay = `${index * 0.1}s`;
+    });
+});
+</script>
+
+</body>
+</html>
+
+

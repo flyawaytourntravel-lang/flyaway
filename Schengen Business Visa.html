@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schengen Business Visas - Fly Away Tours and Travels</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+    header {
+        background: #003366;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+    }
+    #searchBar {
+        display: block;
+        margin: 20px auto;
+        padding: 10px;
+        width: 80%;
+        max-width: 500px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    .card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 250px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+        animation: fadeIn 0.6s ease;
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+    .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .card-content {
+        padding: 15px;
+        text-align: center;
+    }
+    .visa-type {
+        background: #ff6600;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+<script>
+    function searchCountry() {
+        let input = document.getElementById("searchBar").value.toLowerCase();
+        let cards = document.getElementsByClassName("card");
+        for (let i = 0; i < cards.length; i++) {
+            let title = cards[i].getElementsByTagName("h2")[0].innerText.toLowerCase();
+            cards[i].style.display = title.includes(input) ? "" : "none";
+        }
+    }
+</script>
+</head>
+<body>
+
+<header>
+    <h1>Schengen Business Visa Information</h1>
+    <p>Fly Away Tours and Travels</p>
+</header>
+
+<input type="text" id="searchBar" onkeyup="searchCountry()" placeholder="Search for a country...">
+
+<div class="container">
+
+    <!-- 27 Schengen Countries -->
+    <div class="card">
+        <img src="https://flagcdn.com/w320/at.png" alt="Austria Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Austria%20Business%20Visa.html">Austria</a></h2>
+            <p>Attend business meetings, trade fairs, and conferences in Austria.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/be.png" alt="Belgium Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Belgium%20Business%20Visa.html">Belgium</a></h2>
+            <p>Join corporate events and networking sessions in Belgium.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/hr.png" alt="Croatia Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Croatia%20Business%20Visa.html">Croatia</a></h2>
+            <p>Explore new business opportunities in Croatia.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/cz.png" alt="Czech Republic Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Czech%20Republic%20Business%20Visa.html">Czech Republic</a></h2>
+            <p>Attend trade shows and conferences in Prague and beyond.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/dk.png" alt="Denmark Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Denmark%20Business%20Visa.html">Denmark</a></h2>
+            <p>Connect with Nordic business partners in Denmark.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/ee.png" alt="Estonia Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Estonia%20Business%20Visa.html">Estonia</a></h2>
+            <p>Expand your tech and business ventures in Estonia.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/fi.png" alt="Finland Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Finland%20Business%20Visa%20.html">Finland</a></h2>
+            <p>Join corporate events and seminars in Finland.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/fr.png" alt="France Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="France%20Business%20Visa%20.html">France</a></h2>
+            <p>Meet potential partners and attend expos in France.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/de.png" alt="Germany Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Germany%20Business%20Visa.html">Germany</a></h2>
+            <p>Visit trade fairs and corporate events in Germany.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/gr.png" alt="Greece Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Greece%20Business%20Visa.html">Greece</a></h2>
+            <p>Engage in business meetings across Greece.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/hu.png" alt="Hungary Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Hungary%20Business%20Visa.html">Hungary</a></h2>
+            <p>Explore Hungarian markets and corporate ties.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/is.png" alt="Iceland Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Iceland%20Business%20Visa.html">Iceland</a></h2>
+            <p>Discover opportunities in Iceland’s growing economy.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/it.png" alt="Italy Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Italy%20Business%20Visa.html">Italy</a></h2>
+            <p>Join international business gatherings in Italy.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/lv.png" alt="Latvia Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Latvia%20Business%20Visa.html">Latvia</a></h2>
+            <p>Attend trade and networking events in Latvia.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/lt.png" alt="Lithuania Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Lithuania%20Business%20Visa.html">Lithuania</a></h2>
+            <p>Connect with Baltic business partners in Lithuania.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/lu.png" alt="Luxembourg Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Luxembourg%20Business%20Visa.html">Luxembourg</a></h2>
+            <p>Meet investors and partners in Luxembourg.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/mt.png" alt="Malta Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Malta%20Business%20Visa.html">Malta</a></h2>
+            <p>Participate in conferences in Malta.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/nl.png" alt="Netherlands Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Netherlands%20Business%20Visa.html">Netherlands</a></h2>
+            <p>Expand your business network in the Netherlands.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/no.png" alt="Norway Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Norway%20Business%20Visa.html">Norway</a></h2>
+            <p>Connect with Scandinavian business hubs in Norway.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/pl.png" alt="Poland Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Poland%20Business%20Visa.html">Poland</a></h2>
+            <p>Attend corporate events in Poland.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/pt.png" alt="Portugal Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Portugal%20Business%20Visa.html">Portugal</a></h2>
+            <p>Explore investment opportunities in Portugal.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/sk.png" alt="Slovakia Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Slovakia%20Business%20Visa.html">Slovakia</a></h2>
+            <p>Join business exhibitions in Slovakia.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/si.png" alt="Slovenia Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Slovenia%20Business%20Visa.html">Slovenia</a></h2>
+            <p>Expand partnerships in Slovenia.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/es.png" alt="Spain Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Spain%20Business%20Visa.html">Spain</a></h2>
+            <p>Attend corporate events and expos in Spain.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/se.png" alt="Sweden Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Sweden%20Business%20Visa.html">Sweden</a></h2>
+            <p>Connect with Nordic business circles in Sweden.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://flagcdn.com/w320/ch.png" alt="Switzerland Flag">
+        <div class="card-content">
+            <div class="visa-type">Business Visa</div>
+            <h2><a href="Switzerland%20Business%20Visa.html">Switzerland</a></h2>
+            <p>Join financial and corporate events in Switzerland.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study in Italy – Fly Away Tours and Travels</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1568658177032-6fb3b7b4e2b8?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.95);
+      min-height: 100vh;
+      padding: 40px 5%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+    }
+
+    .left, .right {
+      flex: 1 1 400px;
+    }
+
+    .left h1 {
+      color: #002855;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .left h2 {
+      color: #d62828;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .left p, .left li {
+      line-height: 1.6;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    .left ul {
+      padding-left: 20px;
+    }
+
+    .right {
+      background-color: #f5f5f5;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .right h3 {
+      margin-top: 0;
+      color: #002855;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #002855;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #004b99;
+    }
+
+    @media (max-width: 900px) {
+      .overlay {
+        flex-direction: column;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+    <!-- Left Content -->
+    <div class="left">
+      <h1>Study in Italy</h1>
+      <h2>Fly Away Tours and Travels</h2>
+      <p>Welcome to <strong>Fly Away Tour And Travels</strong>, your trusted partner in making your dream of studying in Italy come true. Italy, renowned for its rich history, culture, and exceptional education system, offers a world-class education experience that attracts students globally.</p>
+
+      <h3>Why Study in Italy?</h3>
+      <ul>
+        <li><strong>Quality Education:</strong> Top-ranking Italian universities.</li>
+        <li><strong>Cultural Heritage:</strong> Immerse in history, art, and architecture.</li>
+        <li><strong>Affordable Tuition:</strong> Lower compared to other Western nations.</li>
+        <li><strong>Scholarships Available:</strong> Multiple financial aid options.</li>
+        <li><strong>Career Opportunities:</strong> International job prospects.</li>
+        <li><strong>Vibrant Student Life:</strong> Food, landscapes, and student-friendly cities.</li>
+      </ul>
+
+      <h3>Top Italian Universities</h3>
+      <ul>
+        <li><strong>University of Bologna:</strong> World’s oldest university, diverse programs.</li>
+        <li><strong>Sapienza University of Rome:</strong> Known for engineering, economics, medicine.</li>
+        <li><strong>Politecnico di Milano:</strong> Engineering, architecture, and design.</li>
+        <li><strong>University of Padua:</strong> Prestigious for scientific research.</li>
+        <li><strong>Bocconi University:</strong> Business, economics, and management.</li>
+      </ul>
+
+      <h3>Tuition Fees</h3>
+      <ul>
+        <li><strong>Undergraduate:</strong> €1,000 – €4,000/year</li>
+        <li><strong>Postgraduate:</strong> €1,500 – €4,500/year</li>
+        <li><strong>Ph.D.:</strong> €2,000 – €5,000/year</li>
+        <li><strong>Language Courses:</strong> €300 – €1,000/semester</li>
+      </ul>
+
+      <h3>Living Expenses</h3>
+      <p>Estimated monthly cost: <strong>€700 – €1,000</strong>, including housing, food, and transportation.</p>
+
+      <h3>Scholarships & Financial Aid</h3>
+      <ul>
+        <li>Regional Scholarships</li>
+        <li>Government Scholarships</li>
+        <li>University-Specific Scholarships</li>
+        <li>Erasmus+ (EU Students)</li>
+      </ul>
+
+      <h3>Why Choose Fly Away Tours and Travels?</h3>
+      <ul>
+        <li>Personalized Counseling</li>
+        <li>Application Assistance</li>
+        <li>Visa Support</li>
+        <li>Pre-Departure Guidance</li>
+        <li>Post-Arrival Support</li>
+        <li>Career Counseling</li>
+      </ul>
+
+      <h3>Get Started Today!</h3>
+      <p>Ready to study in Italy? <strong>Fly Away Tour And Travels</strong> is here to support you every step of the way. Contact us now to explore opportunities, scholarships, and start your academic journey!</p>
+    </div>
+
+    <!-- Right Form -->
+    <div class="right">
+      <div class="container">
+  <section class="form-container" aria-label="Italy Student Visa Application Form">
+    <h2>Apply for Your Italy Student Visa</h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="583ea361-8e7d-40d2-af8c-c9f071bb8084" />
+      <input type="hidden" id="visa_type" name="visa_type" value="Student Visa" />
+
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required />
+
+      <label for="university">University/Institution Name *</label>
+      <select id="university" name="university" required onchange="toggleUniversityOther(this)">
+        <option value="" disabled selected>Select your university</option>
+        <option value="University of Bologna">University of Bologna</option>
+        <option value="Sapienza University of Rome">Sapienza University of Rome</option>
+        <option value="University of Milan">University of Milan</option>
+        <option value="Polytechnic University of Turin">Polytechnic University of Turin</option>
+        <option value="Other">Other (please specify)</option>
+      </select>
+      <input type="text" id="university_other" name="university_other" placeholder="Please specify your university" style="display:none; margin-top:8px; padding:10px; border-radius:6px; border:1px solid #ccc;" />
+
+      <label for="course">Course Name *</label>
+      <select id="course" name="course" required onchange="toggleCourseOther(this)">
+        <option value="" disabled selected>Select your course</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Medicine">Medicine</option>
+        <option value="Architecture">Architecture</option>
+        <option value="Business Administration">Business Administration</option>
+        <option value="Other">Other (please specify)</option>
+      </select>
+      <input type="text" id="course_other" name="course_other" placeholder="Please specify your course" style="display:none; margin-top:8px; padding:10px; border-radius:6px; border:1px solid #ccc;" />
+
+      <label for="message">Additional Message</label>
+      <textarea id="message" name="message" placeholder="Write any special requests or questions here..."></textarea>
+
+      <button type="submit" aria-label="Submit Italy student visa application form">Submit Application</button>
+    </form>
+  </section>
+</div>
+
+<script>
+  function toggleUniversityOther(select) {
+    const otherInput = document.getElementById('university_other');
+    otherInput.style.display = select.value === 'Other' ? 'block' : 'none';
+    if (select.value !== 'Other') otherInput.value = '';
+  }
+
+  function toggleCourseOther(select) {
+    const otherInput = document.getElementById('course_other');
+    otherInput.style.display = select.value === 'Other' ? 'block' : 'none';
+    if (select.value !== 'Other') otherInput.value = '';
+  }
+</script>
+
+    </div>
+  </div>
+
+</body>
+</html>

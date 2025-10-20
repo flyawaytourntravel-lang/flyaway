@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Country Cards</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1496307653780-42ee777d4833?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      width: 260px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-bottom: 5px solid #ccc;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+    .content {
+      padding: 15px;
+    }
+
+    .content h3 {
+      margin: 0 0 10px;
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    .content p {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+
+      <!-- Template -->
+      <!-- USA -->
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="USA">
+        <div class="content">
+          <h3><a href="USA%20Study%20Visa%20Information.html">USA</a></h3>
+          <p>Land of opportunities with top global universities and diversity.</p>
+        </div>
+      </div>
+
+      <!-- UK -->
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="UK">
+        <div class="content">
+          <h3><a href="Study%20in%20the%20UK.html">UK</a></h3>
+          <p>Rich history, world-class education, and vibrant cities.</p>
+        </div>
+      </div>
+
+      <!-- Canada -->
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg" alt="Canada">
+        <div class="content">
+          <h3><a href="Study%20in%20Canada.html">CANADA</a></h3>
+          <p>Friendly people, safe environment, and high-quality education.</p>
+        </div>
+      </div>
+
+      <!-- Australia -->
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg" alt="Australia">
+        <div class="content">
+         <h3><a href="Australia%20Study%20Visa.html">AUSTRALIA</a></h3>
+          <p>Top universities and beautiful natural landscapes.</p>
+        </div>
+      </div>
+
+      <!-- Germany -->
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="Germany">
+        <div class="content">
+           <h3><a href="Study%20in%20Germany.html">GERMANY</a></h3>
+          <p>Renowned for engineering, innovation, and affordable education.</p>
+        </div>
+      </div>
+
+      <!-- Italy -->
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg" alt="Italy">
+        <div class="content">
+         <h3><a href="Study%20in%20Italy.html">ITALY</a></h3>
+          <p>Rich culture, historic universities, and vibrant lifestyle.</p>
+        </div>
+      </div>
+
+      <!-- France -->
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="France">
+        <div class="content">
+          <h3><a href="France%20Study%20Visa.html">FRANCE</a></h3>
+          <p>Known for art, fashion, cuisine, and business schools.</p>
+        </div>
+      </div>
+
+      <!-- Singapore -->
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg" alt="Singapore">
+        <div class="content">
+          <h3><a href="Study%20in%20Singapore.html">Singapore</a></h3>
+          <p>Clean, modern, and a major education and tech hub.</p>
+        </div>
+      </div>
+
+      <!-- Malaysia -->
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg" alt="Malaysia">
+        <div class="content">
+          <h3><a href="Study%20in%20Malaysia.html">Malaysia</a></h3>
+          <p>Affordable programs with English-medium instruction.</p>
+        </div>
+      </div>
+
+      <!-- South Africa -->
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg" alt="South Africa">
+        <div class="content">
+          <h3><a href="Study%20in%20South%20Africa.html">South Africa</a></h3>
+          <p>Beautiful country with growing educational offerings.</p>
+        </div>
+      </div>
+
+      <!-- New Zealand -->
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg" alt="New Zealand">
+        <div class="content">
+          <h3><a href="Study%20in%20New%20Zealand.html">New Zealand</a></h3>
+          <p>Safe, student-friendly, and research-driven programs.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

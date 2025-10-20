@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portugal Visa – Fly Away Tours And Travels</title>
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #4a90e2; /* Light blue */
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+    header p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto 25px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+    }
+    .visa-rate {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #ffde59;
+      animation: pulse 2.5s infinite ease-in-out;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto 80px;
+      padding: 0 20px;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    /* Form styling */
+    .form-container {
+      flex: 1 1 380px;
+      background: white;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .form-container:hover {
+      box-shadow: 0 12px 36px rgba(0,0,0,0.15);
+    }
+    .form-container h2 {
+      color: #4a90e2;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #555;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 18px;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.25s ease;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #4a90e2;
+      outline: none;
+      box-shadow: 0 0 6px rgba(74,144,226,0.4);
+    }
+    textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+    button {
+      width: 100%;
+      background-color: #4a90e2;
+      color: white;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #356ac3;
+    }
+
+    /* Content area styling */
+    .content {
+      flex: 2 1 700px;
+      background: white;
+      padding: 35px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .content h2 {
+      color: #4a90e2;
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+    .content h3 {
+      color: #333;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      font-size: 1.4rem;
+      border-bottom: 3px solid #4a90e2;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .content ul {
+      margin-left: 20px;
+      margin-bottom: 25px;
+      color: #555;
+      font-size: 1rem;
+      list-style-type: disc;
+    }
+    .content p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+      color: #444;
+    }
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        padding: 0 10px 40px;
+      }
+      .form-container,
+      .content {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .visa-rate {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Portugal Visa – Fly Away Tours And Travels</h1>
+  <p>Experience Portugal’s rich history, stunning coastline, world-famous wines, and warm hospitality on your next journey.</p>
+  <div class="visa-rate">Visa Success Rate: <span id="counter">0%</span></div>
+</header>
+
+<div class="container">
+  <section class="form-container" aria-label="Visa Application Form">
+    <h2>Apply for Your Portugal Visa</h2>
+    <form action="#" method="POST" novalidate>
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required />
+
+      <label for="visa_type">Visa Type *</label>
+      <select id="visa_type" name="visa_type" required>
+        <option value="" disabled selected>Select a visa type</option>
+        <option value="Tourist Visa">Tourist Visa</option>
+        <option value="Business Visa">Business Visa</option>
+        <option value="Student Visa">Student Visa</option>
+        <option value="Work Visa">Work Visa</option>
+      </select>
+
+      <label for="message">Additional Message</label>
+      <textarea id="message" name="message" placeholder="Write any special requests or questions here..."></textarea>
+
+      <button type="submit" aria-label="Submit visa application form">Submit Application</button>
+    </form>
+  </section>
+
+  <section class="content" aria-label="Portugal Visa Information">
+    <h2>Portugal Visa Overview</h2>
+    <p>Portugal is famous for its stunning beaches, historic cities, delicious cuisine, and warm climate. Whether you plan to explore Lisbon’s charming streets or relax on the Algarve coast, Portugal offers a diverse and welcoming travel experience.</p>
+
+    <h3>Documents Required</h3>
+    <ul>
+      <li>Valid Passport (issued within last 10 years, valid for at least 3 months beyond stay)</li>
+      <li>Completed Schengen visa application form</li>
+      <li>Recent passport-sized photographs (as per Schengen requirements)</li>
+      <li>Cover letter stating purpose of visit and itinerary</li>
+      <li>Proof of accommodation (hotel bookings or invitation letter)</li>
+      <li>Travel insurance (minimum €30,000 coverage)</li>
+      <li>Proof of financial means (bank statements, income tax returns)</li>
+      <li>Flight reservation or travel itinerary</li>
+      <li>Employment proof or student ID if applicable</li>
+    </ul>
+
+    <h3>Visa Processing Time</h3>
+    <p>Processing usually takes 10 to 15 business days. It’s best to apply 3-4 weeks before your intended travel.</p>
+
+    <h3>Types of Visa</h3>
+    <ul>
+      <li><strong>Schengen Short-Stay Visa (Type C):</strong> For stays up to 90 days for tourism, business, or family visits.</li>
+      <li><strong>Long-Stay Visa (Type D):</strong> For longer stays such as work, study, or family reunification.</li>
+      <li><strong>Student Visa:</strong> For academic programs in Portugal.</li>
+      <li><strong>Work Visa:</strong> For employment in Portugal with a valid job offer.</li>
+    </ul>
+
+    <h3>Why Choose Fly Away Tours And Travels?</h3>
+    <ul>
+      <li>Expert consultants specialized in Portugal visa processing</li>
+      <li>Personalized document review and guidance</li>
+      <li>Quick appointment scheduling and application submission support</li>
+      <li>Comprehensive end-to-end assistance until visa approval</li>
+    </ul>
+
+    <p>Start your unforgettable Portuguese journey now by applying with Fly Away Tours And Travels!</p>
+  </section>
+</div>
+
+<script>
+  // Animate counter from 0% to 98%
+  const counter = document.getElementById('counter');
+  let count = 0;
+  const target = 98;
+  const duration = 2500; // ms
+  const stepTime = Math.abs(Math.floor(duration / target));
+  
+  function updateCounter() {
+    count++;
+    counter.textContent = count + '%';
+    if (count < target) {
+      setTimeout(updateCounter, stepTime);
+    }
+  }
+  updateCounter();
+</script>
+
+</body>
+</html>

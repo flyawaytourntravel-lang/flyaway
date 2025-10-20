@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Estonia Job Visa – Fly Away Tours And Travels</title>
+    <style>
+        /* Reset & base */
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #4a90e2; /* Light blue */
+            color: white;
+            padding: 60px 20px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+        }
+        header p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 25px;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+        }
+        .visa-rate {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: #ffde59;
+            animation: pulse 2.5s infinite ease-in-out;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto 80px;
+            padding: 0 20px;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* Form styling */
+        .form-container {
+            flex: 1 1 50%;
+            background: white;
+            padding: 30px 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        .form-container:hover {
+            box-shadow: 0 12px 36px rgba(0,0,0,0.15);
+        }
+        .form-container h2 {
+            color: #4a90e2;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px 14px;
+            margin-bottom: 18px;
+            border: 1.5px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.25s ease;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #4a90e2;
+            outline: none;
+            box-shadow: 0 0 6px rgba(74,144,226,0.4);
+        }
+        textarea {
+            resize: vertical;
+            min-height: 90px;
+        }
+        button {
+            width: 100%;
+            background-color: #4a90e2;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #356ac3;
+        }
+
+        /* Content area styling */
+        .content {
+            flex: 1 1 50%;
+            background: white;
+            padding: 35px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        .content h2 {
+            color: #4a90e2;
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+        .content h3 {
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            font-size: 1.4rem;
+            border-bottom: 3px solid #4a90e2;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .content ul {
+            margin-left: 20px;
+            margin-bottom: 25px;
+            color: #555;
+            font-size: 1rem;
+            list-style-type: disc;
+        }
+        .content p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+            color: #444;
+        }
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                padding: 0 10px 40px;
+            }
+            .form-container,
+            .content {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            .visa-rate {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Future in Estonia Awaits</h1>
+    <p>Secure your professional future in the heart of Europe's thriving digital economy. </p>
+    <div class="visa-rate">Visa Success Rate: <span id="counter">0%</span></div>
+</header>
+
+<div class="container">
+    <section class="form-container" aria-label="Professional Job Visa Application Form">
+        <h2>Begin Your Job Visa Application</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="583ea361-8e7d-40d2-af8c-c9f071bb8084" />
+            <input type="hidden" id="visa_type" name="visa_type" value="Estonia Professional Job Visa" />
+
+            <!-- Full Name -->
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+            <!-- Email -->
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+            <!-- Phone -->
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required />
+
+            <!-- Current Occupation -->
+            <label for="occupation">Current Occupation *</label>
+            <input type="text" id="occupation" name="occupation" placeholder="e.g., Software Engineer, Doctor" required />
+
+            <!-- Desired Job Sector -->
+            <label for="job_sector">Desired Job Sector</label>
+            <select id="job_sector" name="job_sector">
+                <option value="" disabled selected>Select a job sector</option>
+                <option value="IT & Tech">IT & Tech</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Finance">Finance</option>
+                <option value="Education">Education</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <!-- Years of Experience -->
+            <label for="experience">Years of Experience</label>
+            <input type="number" id="experience" name="experience" placeholder="e.g., 5" />
+
+            <!-- Message -->
+            <label for="message">Additional Message</label>
+            <textarea id="message" name="message" placeholder="Include a brief message about your professional background or questions..."></textarea>
+
+            <!-- Submit -->
+            <button type="submit" aria-label="Submit Estonia job visa application form">Submit Application</button>
+        </form>
+    </section>
+
+    <section class="content" aria-label="Estonia Visa Information">
+        <h2>Key Information on the Estonia Job Visa</h2>
+        <p>Estonia is a global leader in e-governance and a hub for tech and startups. The **D-visa for employment** is a common choice for non-EU citizens, often a first step towards a Residence Permit for Employment.</p>
+        
+        <h3>Eligibility & Benefits</h3>
+        <ul>
+            <li>The D-visa allows you to stay and work in Estonia for up to 12 months.</li>
+            <li>You must have a job offer from a registered Estonian employer.</li>
+            <li>The D-visa can be a precursor to obtaining a long-term Residence Permit for Employment.</li>
+            <li>Estonia's digital infrastructure makes the visa application and renewal process highly efficient.</li>
+        </ul>
+        
+        <h3>Required Documents</h3>
+        <p>While requirements may vary, the following are generally needed:</p>
+        <ul>
+            <li>Valid passport with sufficient validity.</li>
+            <li>Completed and signed visa application form.</li>
+            <li>Recent passport-sized photographs.</li>
+            <li>Proof of a secured job/employment contract from an Estonian company.</li>
+            <li>Proof of accommodation in Estonia (e.g., rental agreement or letter from your employer).</li>
+            <li>Proof of sufficient financial means to support your stay.</li>
+            <li>Valid travel health insurance.</li>
+        </ul>
+        
+        <h3>Why Choose Fly Away Tours And Travels?</h3>
+        <ul>
+            <li>Experienced consultants with in-depth knowledge of Estonian visa procedures.</li>
+            <li>Personalized assistance with documentation and interview preparation.</li>
+            <li>Efficient application handling to ensure a smooth process.</li>
+            <li>Comprehensive support throughout your entire visa journey.</li>
+        </ul>
+    </section>
+</div>
+
+<script>
+    // Animate counter from 0% to 98%
+    const counter = document.getElementById('counter');
+    let count = 0;
+    const target = 98;
+    const duration = 2500; // ms
+    const stepTime = Math.abs(Math.floor(duration / target));
+    
+    function updateCounter() {
+        count++;
+        counter.textContent = count + '%';
+        if (count < target) {
+            setTimeout(updateCounter, stepTime);
+        }
+    }
+    updateCounter();
+</script>
+
+</body>
+</html>

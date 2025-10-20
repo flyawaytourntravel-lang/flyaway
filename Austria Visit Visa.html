@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Austria Visa – Fly Away Tours And Travels</title>
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #4a90e2; /* Light blue */
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+    header p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto 25px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+    }
+    .visa-rate {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #ffde59;
+      animation: pulse 2.5s infinite ease-in-out;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto 80px;
+      padding: 0 20px;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    /* Form styling */
+    .form-container {
+      flex: 1 1 380px;
+      background: white;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .form-container:hover {
+      box-shadow: 0 12px 36px rgba(0,0,0,0.15);
+    }
+    .form-container h2 {
+      color: #4a90e2;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #555;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 18px;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.25s ease;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #4a90e2;
+      outline: none;
+      box-shadow: 0 0 6px rgba(74,144,226,0.4);
+    }
+    textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+    button {
+      width: 100%;
+      background-color: #4a90e2;
+      color: white;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #356ac3;
+    }
+
+    /* Content area styling */
+    .content {
+      flex: 2 1 700px;
+      background: white;
+      padding: 35px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .content h2 {
+      color: #4a90e2;
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+    .content h3 {
+      color: #333;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      font-size: 1.4rem;
+      border-bottom: 3px solid #4a90e2;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .content ul {
+      margin-left: 20px;
+      margin-bottom: 25px;
+      color: #555;
+      font-size: 1rem;
+      list-style-type: disc;
+    }
+    .content p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+      color: #444;
+    }
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        padding: 0 10px 40px;
+      }
+      .form-container,
+      .content {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .visa-rate {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Austria Visa – Fly Away Tours And Travels</h1>
+  <p>Discover Austria — a land of alpine beauty, classical music, cultural heritage, and charming cities, welcoming visitors from around the world.</p>
+  <div class="visa-rate">Visa Success Rate: <span id="counter">0%</span></div>
+</header>
+
+<div class="container">
+  <section class="form-container" aria-label="Visa Application Form">
+    <!-- Right Form -->
+<div class="right">
+  <div class="container">
+    <section class="form-container" aria-label="Austria Visit Visa Application Form">
+      <h2>Apply for Your Austria Visit Visa</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="583ea361-8e7d-40d2-af8c-c9f071bb8084" />
+        <input type="hidden" id="visa_type" name="visa_type" value="Visit Visa" />
+
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required />
+
+        <label for="passport">Passport Number *</label>
+        <input type="text" id="passport" name="passport" placeholder="Enter your passport number" required />
+
+        <label for="travel_dates">Intended Travel Dates *</label>
+        <input type="text" id="travel_dates" name="travel_dates" placeholder="DD/MM/YYYY - DD/MM/YYYY" required />
+
+        <label for="purpose">Purpose of Visit *</label>
+        <select id="purpose" name="purpose" required>
+          <option value="" disabled selected>Select purpose</option>
+          <option value="Tourism">Tourism</option>
+          <option value="Family Visit">Family Visit</option>
+          <option value="Business">Business</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="message">Additional Message</label>
+        <textarea id="message" name="message" placeholder="Write any special requests or questions here..."></textarea>
+
+        <button type="submit" aria-label="Submit visit visa application form">Submit Application</button>
+      </form>
+    </section>
+  </div>
+</div>
+  </section>
+
+  <section class="content" aria-label="Austria Visa Information">
+    <h2>Austria Visa Overview</h2>
+    <p>Austria, at the heart of Europe, is renowned for its alpine landscapes, imperial history, classical music, and vibrant cities like Vienna and Salzburg. Whether you are visiting for tourism, study, business, or work, Austria offers rich opportunities and experiences.</p>
+
+    <h3>Documents Required</h3>
+    <ul>
+      <li>Valid Passport (minimum 6 months validity)</li>
+      <li>Completed and signed visa application form</li>
+      <li>Recent passport-sized photographs (as per guidelines)</li>
+      <li>Proof of accommodation in Austria</li>
+      <li>Detailed travel itinerary</li>
+      <li>Proof of financial means to support your stay</li>
+      <li>Travel insurance with medical coverage</li>
+      <li>Invitation letter (if applicable)</li>
+    </ul>
+
+    <h3>Visa Processing Time</h3>
+    <p>Processing time usually ranges from 10 to 15 business days, but it may vary depending on the time of year and individual circumstances.</p>
+
+    <h3>Types of Visa</h3>
+    <ul>
+      <li><strong>Short-Stay Schengen Visa (Type C):</strong> For tourism, business, or family visits up to 90 days within a 180-day period.</li>
+      <li><strong>Long-Stay Visa (Type D):</strong> For stays longer than 90 days including study, work, or family reunification.</li>
+      <li><strong>Student Visa:</strong> For individuals accepted into Austrian educational institutions.</li>
+      <li><strong>Work Visa:</strong> For professionals with valid employment offers in Austria.</li>
+    </ul>
+
+    <h3>Why Choose Fly Away Tours And Travels?</h3>
+    <ul>
+      <li>Experienced consultants familiar with Austrian visa regulations</li>
+      <li>Personalized support throughout your application process</li>
+      <li>Efficient handling to reduce delays</li>
+      <li>Continuous updates and expert advice</li>
+    </ul>
+
+    <p>Start your journey to Austria today by filling out the application form — our experts are here to assist you every step of the way!</p>
+  </section>
+</div>
+
+<script>
+  // Animate counter from 0% to 98%
+  const counter = document.getElementById('counter');
+  let count = 0;
+  const target = 98;
+  const duration = 2500; // ms
+  const stepTime = Math.abs(Math.floor(duration / target));
+  
+  function updateCounter() {
+    count++;
+    counter.textContent = count + '%';
+    if (count < target) {
+      setTimeout(updateCounter, stepTime);
+    }
+  }
+  updateCounter();
+</script>
+
+</body>
+</html>
